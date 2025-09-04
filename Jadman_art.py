@@ -1,5 +1,6 @@
 import cv2
 import numpy as np
+import random
 
 scale = 20
 canvas = np.ones((20 * scale, 20 * scale, 3), dtype="uint8") * 255
@@ -177,7 +178,8 @@ while True:
     if cv2.waitKey(500) & 0xFF in [27, ord('q')]:
         break
 
-    for i in range(6):  # flicker 6 times
+    flicker_times = random.randint(3, 10)  # random flicker between 3 and 10 times
+    for i in range(flicker_times):
         canvas[:] = 255
         draw_on_light()
         draw_rays(flicker=(i % 2 == 0))  # alternate colors
