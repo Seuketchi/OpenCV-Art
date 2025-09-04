@@ -9,13 +9,13 @@ canvas = np.ones((20 * scale, 20 * scale, 3), dtype="uint8") * 255
 dark_yellow = (0, 150, 200) 
 bright_yellow = (0, 255, 255)
 mid_yellow = (0, 200, 230)
-grey = (128, 128, 128)      # Standard gray
-dark_gray = (64, 64, 64)    # Dark gray
-mid_gray = (160, 160, 160)  # Mid gray
-light_gray = (200, 200, 200) # Light gray
-very_light_gray = (220, 220, 220) # Very light gray (between light_gray and super_light_gray)
-super_light_gray = (240, 240, 240) # Super light gray
-black = (0, 0, 0)           # Pure black    
+grey = (128, 128, 128)      
+dark_gray = (64, 64, 64)  
+mid_gray = (160, 160, 160)  
+light_gray = (200, 200, 200)
+very_light_gray = (220, 220, 220) 
+super_light_gray = (240, 240, 240) 
+black = (0, 0, 0)             
 
 
 def draw_pixel(x, y, color):
